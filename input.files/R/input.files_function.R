@@ -9,8 +9,8 @@
 
 input.files <- function(ASE_file, legend_file, haplotypes_file)
 {
-  # Samples <- read.table(arg1, header=T)
-  # assign("Samples", envir = .GlobalEnv)
+  Samples <- read.table(arg1, header=T)
+  assign("Samples", Samples, envir = .GlobalEnv)
   ASE <- read.table(ASE_file, header=T)
   assign("ASE", ASE, envir = .GlobalEnv)
   LEG <- read.table(legend_file, header=T)
